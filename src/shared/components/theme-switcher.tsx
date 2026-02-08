@@ -37,6 +37,7 @@ export function ThemeSwitcher() {
       <Button
         type="button"
         variant="ghost"
+        size="icon"
         onClick={() => setOpen(!open)}
         className="flex h-9 w-9 items-center justify-center rounded-lg p-0 text-zinc-500 hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-200"
         title="Ganti tema"
@@ -58,11 +59,10 @@ export function ThemeSwitcher() {
                   setTheme(t.value);
                   setOpen(false);
                 }}
-                className={`flex w-full items-center gap-2.5 rounded-lg px-3 py-2 text-sm ${
-                  isActive
+                className={`flex w-full items-center gap-2.5 rounded-lg px-3 py-2 text-sm ${isActive
                     ? "text-blue-600 dark:text-blue-400"
                     : "text-zinc-600 hover:bg-zinc-50 dark:text-zinc-400 dark:hover:bg-zinc-800"
-                }`}
+                  }`}
               >
                 <Icon className="h-4 w-4" />
                 <span className="flex-1 text-left">{t.label}</span>
