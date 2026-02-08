@@ -46,19 +46,19 @@ export function ContactCard({ contact, onEdit, onDelete }: ContactCardProps) {
             type="button"
             variant="secondary"
             onClick={onEdit}
-            className="px-3 py-1.5 text-xs hover:border-blue-300 hover:bg-blue-50 hover:text-blue-700 dark:hover:border-blue-700 dark:hover:bg-blue-950/30 dark:hover:text-blue-400"
+            className="px-2 py-1.5 text-xs hover:border-blue-300 hover:bg-blue-50 hover:text-blue-700 dark:hover:border-blue-700 dark:hover:bg-blue-950/30 dark:hover:text-blue-400 xl:px-3"
           >
             <Pencil className="h-3 w-3" />
-            Edit
+            <span className="hidden xl:inline">Edit</span>
           </Button>
           <Button
             type="button"
             variant="secondary"
             onClick={onDelete}
-            className="px-3 py-1.5 text-xs hover:border-red-300 hover:bg-red-50 hover:text-red-700 dark:hover:border-red-700 dark:hover:bg-red-950/30 dark:hover:text-red-400"
+            className="px-2 py-1.5 text-xs hover:border-red-300 hover:bg-red-50 hover:text-red-700 dark:hover:border-red-700 dark:hover:bg-red-950/30 dark:hover:text-red-400 xl:px-3"
           >
             <Trash2 className="h-3 w-3" />
-            Hapus
+            <span className="hidden xl:inline">Hapus</span>
           </Button>
         </div>
       </div>
